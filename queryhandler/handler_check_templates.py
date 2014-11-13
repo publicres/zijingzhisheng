@@ -20,6 +20,7 @@ def handler_check_events(msg, events):
 def handler_check_text_header(msg, headers):
     if not is_msgtype(msg, 'text'):
         return False
+
     tmpstrs = msg['Content'].split()
     if len(tmpstrs) == 0:
         return False

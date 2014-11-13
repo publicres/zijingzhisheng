@@ -60,18 +60,25 @@ if 'SERVER_SOFTWARE' in os.environ:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'wx0_orth',
+            'NAME': 'wx0_exp1',
             'USER': 'wx0',
             'PASSWORD': 'xEtLormWyivuddOo',
             'HOST': 'db.igeek.asia',
             'PORT': '3306',
             }
     }
+    #con = MySQLdb.Connect(host = "sqld.duapp.com",
+   #                       port = 4050,
+   #                       user = "6jIVijhGUVreXBNI6jYzZGlt",
+   #                       passwd = "AxB1w67ddB4cwkCLw3gQSoBjGUcICUL3",
+    #                      db = "NYenZfWMVWuqtUGNuQsI")
+   # con.ping(True)
+   #cur = con.cursor()
 elif (os.environ.get('USER', '') == 'ssastadmin') or ('SSAST_DEPLOYMENT' in os.environ):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'wx0_orth',
+            'NAME': 'wx0_exp1',
             'USER': 'wx0',
             'PASSWORD': 'xEtLormWyivuddOo',
             'HOST': 'db.igeek.asia',
@@ -82,7 +89,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'wx0_orth',
+            'NAME': 'wx0_exp1',
             'USER': 'wx0',
             'PASSWORD': 'xEtLormWyivuddOo',
             'HOST': 'db.igeek.asia',

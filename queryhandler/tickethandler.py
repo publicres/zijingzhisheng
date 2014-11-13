@@ -237,6 +237,8 @@ def check_cancel_ticket(msg):
 
 
 def response_cancel_ticket(msg):
+    #return get_reply_text_xml(msg, u'233333333')
+
     fromuser = get_msg_from(msg)
     user = get_user(fromuser)
     if user is None:
@@ -380,4 +382,3 @@ def check_xnlhwh(msg):
 def response_xnlhwh(msg):
     msg['Content'] = '节目单 新年联欢晚会'
     return response_get_activity_menu(msg)
-
